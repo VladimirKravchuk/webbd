@@ -1,0 +1,328 @@
+/* Boyko Dmitriy | IPZ-20-1 */
+
+
+/* Fonts */
+@font-face {
+font-family: SF Pro Display;
+src: url("/fonts/SFPro/SFProDisplay-Light.ttf") format("truetype");
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
+text-transform: uppercase;
+}
+
+@font-face {
+font-family: Nympha Trial;
+src: url("/fonts/Nympha Font Family/Nympha NymphaTrial-LightItalic.ttf.ttf") format("truetype");
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 27px;
+text-align: right;
+text-transform: uppercase;
+}
+/* Fonts end */
+
+.news-record {
+    overflow: hidden;
+}
+
+.news-record {
+    padding-top: 10px;
+}
+
+.news {
+    padding: 10px 10px 10px 0px;
+}
+
+.div1 {
+    background-image: url(/files/background.jpg);
+    height: 450px;
+}
+
+/* Background */
+.body {
+    font: 100% / 1.414 "Open Sans", "Roboto", arial, sans-serif;
+}
+
+.ver2::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: url(https://images.pexels.com/photos/219550/pexels-photo-219550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover no-repeat;
+    filter: blur(15px);
+}
+
+.ver1::before {
+    content: '';
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: url(https://images.pexels.com/photos/1164674/pexels-photo-1164674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover no-repeat;
+    filter: blur(15px);
+}
+/*     background: url(https://images.pexels.com/photos/219550/pexels-photo-219550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center / cover no-repeat;
+*/
+.body.blur{
+    box-shadow: none;
+}
+/* Background end*/
+
+/* Input */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    font-family: 'SF Pro Display', italic;
+    font-size: 1.0rem;
+    color: black;
+    width: 88%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 8px 10px 8px 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus {
+  background-color: #f8f8f8;
+  width: 100%;
+}
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="password"]:hover,
+form select:focus,
+form textarea:focus {
+  width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    line-height: 1em;
+}
+/* Input end */
+
+/* Text */
+h1 {
+    font-family: 'Nympha Trial';
+    font-style: normal;
+    font-size: 42px;
+    line-height: 0.6em;
+    color: #161616;
+}
+
+hr {
+    position: absolute;
+    background-color: #161616;
+    bottom: 395px;
+    left: 40px;
+    height: 2px;
+    border: 0;
+    width: 120px;
+}
+
+.hr2{
+    bottom: 315px;
+}
+
+p {
+    font-family: 'SF Pro Display', sans-serif;
+    color: #161616;
+    font-size: 17px;
+    line-height: 0;
+}
+
+p.second{
+    line-height: 0;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.show{
+    font-size: 0.75rem;
+}
+
+a:hover {
+  border-bottom-color: rgba(53, 184, 143, 0);
+}
+
+a.link{
+    font-family: 'SF Pro Display', italic;
+    font-size: 1.0rem;
+    line-height: 0.0;
+    color: #161616;
+}
+a.link:hover{
+    color: darkgray;
+}
+
+label {
+    font-family: 'SF Pro Display';
+    color: black;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+form label {
+    display: block;
+}
+/* Text end */
+
+/* Containers */
+.signup__container {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    transform: translateY(-50%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 530px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 35px 20px rgba(0, 0, 0, 0.45);
+}
+
+.v2 {
+    height: 450px;
+}
+
+.signup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+.container__child {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+}
+
+.signup__thumbnail {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(https://images.pexels.com/photos/1164674/pexels-photo-1164674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+.signup__thumbnailv2 {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(https://images.pexels.com/photos/219550/pexels-photo-219550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+}
+
+.thumbnail__links {
+    position: relative;
+    z-index: 2;
+}
+
+.signup__form {
+    padding: 2.5rem;
+    background: #fafafa;
+}
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 16px;
+    margin: 10px 20px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    background: #161616;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+}
+
+.floating-button:hover {
+    background: gray;
+    box-shadow: 0 10px 20px darkgray;
+    transform: translateX(+8px);
+    transform: translateY(+8px);
+}
+
+.show {
+    color: black;
+    font-family: SF Pro Display;
+    font-size: 15px;
+}
+
+.form-content {
+    position: relative;
+    margin: 30px -40px 0 -40px;
+    padding: 10px 40px 0 40px;
+    background: #FFF8F3;
+}
+
+.form-group {
+    padding: 0.8em 0 0 0;
+}
+/* Containers end */
+
+/* Adaptive */
+@media screen and (min-width: 1200px) {
+    .maintitle {
+        font-size: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .signup__container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .signup__container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .signup__container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .signup__container {
+        top: 60%;
+        height: 560px;
+        width: 100%;
+    }
+}
+/* Adaptive end */
